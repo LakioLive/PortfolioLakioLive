@@ -56,8 +56,8 @@ Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## Technologies
 
--   **TailwindCSS**: A utility-first CSS framework for rapidly building custom user interfaces.
 -   **Sass**: A preprocessor scripting language that is interpreted or compiled into CSS.
+-   **TailwindCSS**: A utility-first CSS framework for rapidly building custom user interfaces.
 -   **JavaScript**: A programming language that enables interactive web pages and is an essential part of web applications.
 -   **React**: JavaScript library for building user interfaces.
 -   **Framer Motion**: A production-ready motion library for React to create animations.
