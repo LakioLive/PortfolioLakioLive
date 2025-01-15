@@ -119,7 +119,13 @@ const dataProjects = [
         description:
             "This application is designed to help tourists find points of interest and plan their routes. The interactive map allows users to search for locations, view details about various attractions, and create customized travel itineraries.",
         imageSrc: "./website_trip.jpg",
-        technologies: ["Sass", "TailwindCSS", "TypeScript", "React"],
+        technologies: [
+            "Sass",
+            "TailwindCSS",
+            "TypeScript",
+            "React",
+            "Firebase",
+        ],
         repository: "https://github.com/LakioLive/InteractiveMapTrip",
         link: "https://interactive-map-trip.vercel.app/",
     },
