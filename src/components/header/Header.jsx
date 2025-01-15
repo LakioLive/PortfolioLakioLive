@@ -89,14 +89,18 @@ export default function Header() {
             </div>
             <video
                 src="../../../blue_shape.mp4"
-                autoPlay={true}
                 loop
+                autoPlay
+                muted
+                playsInline
                 className="hidden dark:block absolute right-0 sm:w-[30vw] sm:blur-none blur"
             ></video>
             <video
                 src="../../../blue_shape_white.mp4"
-                autoPlay={true}
                 loop
+                autoPlay
+                muted
+                playsInline
                 className="block dark:hidden absolute right-0 sm:w-[30vw] sm:blur-none blur"
             ></video>
         </header>
