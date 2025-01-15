@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { IoMdMail } from "react-icons/io";
 import { FaGithub, FaHeart, FaLinkedin } from "react-icons/fa";
+import { FaBluesky, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -59,6 +60,22 @@ export default function Footer() {
                             target="_blank"
                         >
                             <FaLinkedin className="text-base md:text-lg xl:text-2xl text-white" />
+                        </motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            href="https://bsky.app/profile/lakiolive.bsky.social"
+                            target="_blank"
+                        >
+                            <FaBluesky className="text-base md:text-lg xl:text-2xl text-white" />
+                        </motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            href="https://x.com/lakiolive"
+                            target="_blank"
+                        >
+                            <FaSquareXTwitter className="text-base md:text-lg xl:text-2xl text-white" />
                         </motion.a>
                     </div>
                 </div>
