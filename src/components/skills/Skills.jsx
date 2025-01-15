@@ -1,10 +1,17 @@
-import { Tooltip } from 'react-tooltip';
+import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion";
 import {
-    FaHtml5, FaCss3Alt, FaReact, FaPython, FaSass, FaBootstrap
+    FaHtml5,
+    FaCss3Alt,
+    FaReact,
+    FaPython,
+    FaSass,
+    FaBootstrap,
+    FaLaravel,
+    FaMarkdown,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiPhp, SiRedux, SiExpo, SiTypescript } from "react-icons/si";
+import { SiPhp, SiRedux, SiExpo, SiTypescript, SiSqlite } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 
@@ -22,13 +29,16 @@ const skills = [
     { icon: FaReact, name: "React Native" },
     { icon: SiExpo, name: "Expo" },
     { icon: SiPhp, name: "PHP" },
+    { icon: FaLaravel, name: "Laravel" },
     { icon: DiMysql, name: "MySQL" },
+    { icon: SiSqlite, name: "MySQL" },
     { icon: FaPython, name: "Python" },
+    { icon: FaMarkdown, name: "Markdown" },
 ];
 
 const visibleVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
 };
 
 export default function Skills() {
@@ -43,32 +53,34 @@ export default function Skills() {
             className="skills flex flex-col justify-center h-screen lg:mx-32 md:mx-24 sm:mx-20 mx-8"
         >
             <div className="bg-gray-300/50 dark:bg-dark-gray rounded-2xl px-8 py-10">
-                <h3 className="xl:text-7xl md:text-5xl text-3xl font-bold mb-3">My Skills</h3>
-                <p className="xl:text-xl md:text-lg text-base text-gray-500 dark:text-light-gray">Here are a few technologies I've been working with recently</p>
+                <h3 className="xl:text-7xl md:text-5xl text-3xl font-bold mb-3">
+                    My Skills
+                </h3>
+                <p className="xl:text-xl md:text-lg text-base text-gray-500 dark:text-light-gray">
+                    Here are a few technologies I've been working with recently
+                </p>
                 <div className="logo-technologies grid grid-cols-5 justify-items-center gap-y-6 mt-10">
-                    {
-                        skills.map((skill, index) => {
-                            const Icon = skill.icon;
-                            return (
-                                <motion.div
-                                    key={index}
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.8 }}
-                                >
-                                    <Icon
-                                        className="w-[10vw] h-[9vh]"
-                                        data-tooltip-id="tooltip-skills"
-                                        data-tooltip-content={skill.name}
-                                    />
-                                </motion.div>
-                            );
-                        })
-                    }
+                    {skills.map((skill, index) => {
+                        const Icon = skill.icon;
+                        return (
+                            <motion.div
+                                key={index}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 0.8 }}
+                            >
+                                <Icon
+                                    className="w-[10vw] h-[9vh] outline-none"
+                                    data-tooltip-id="tooltip-skills"
+                                    data-tooltip-content={skill.name}
+                                />
+                            </motion.div>
+                        );
+                    })}
                     <Tooltip
                         id="tooltip-skills"
                         style={{
                             backgroundColor: "#4f4f4f",
-                            color: "#fff"
+                            color: "#fff",
                         }}
                     />
                 </div>
