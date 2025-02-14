@@ -29,8 +29,8 @@ export default function Footer() {
                     </h6>
                     <div className="mt-2">
                         <motion.a
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.8 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
                             href="mailto:mister.lakio.new@gmail.com"
                             target="_blank"
                             className="flex items-center gap-1 text-base md:text-lg lg:text-xl text-white dark:text-light-gray"

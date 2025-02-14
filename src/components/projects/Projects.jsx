@@ -13,91 +13,91 @@ const technologyIcons = {
         <FaHtml5
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="HTML5"
-            className="text-3xl text-red-500"
+            className="text-3xl text-red-500 outline-none"
         />
     ),
     CSS: (
         <FaCss3Alt
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="CSS"
-            className="text-3xl text-blue-500"
+            className="text-3xl text-blue-500 outline-none"
         />
     ),
     Sass: (
         <FaSass
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="Sass"
-            className="text-3xl text-pink-500"
+            className="text-3xl text-pink-500 outline-none"
         />
     ),
     JavaScript: (
         <IoLogoJavascript
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="JavaScript"
-            className="text-3xl text-yellow-500"
+            className="text-3xl text-yellow-500 outline-none"
         />
     ),
     TypeScript: (
         <SiTypescript
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="TypeScript"
-            className="text-3xl text-[#2f74c0]"
+            className="text-3xl text-[#2f74c0] outline-none"
         />
     ),
     TailwindCSS: (
         <RiTailwindCssFill
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="Tailwind CSS"
-            className="text-3xl text-teal-500"
+            className="text-3xl text-teal-500 outline-none"
         />
     ),
     React: (
         <FaReact
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="React"
-            className="text-3xl text-react-blue"
+            className="text-3xl text-react-blue outline-none"
         />
     ),
     ReactNative: (
         <FaReact
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="React Native"
-            className="text-3xl text-react-blue"
+            className="text-3xl text-react-blue outline-none"
         />
     ),
     Expo: (
         <SiExpo
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="Expo"
-            className="text-3xl text-black"
+            className="text-3xl text-black outline-none"
         />
     ),
     MySQL: (
         <DiMysql
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="MySQL"
-            className="text-3xl"
+            className="text-3xl outline-none"
         />
     ),
     SQLite: (
         <SiSqlite
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="SQLite"
-            className="text-3xl"
+            className="text-3xl outline-none"
         />
     ),
     Firebase: (
         <IoLogoFirebase
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="Firebase"
-            className="text-3xl text-[#f7c42a]"
+            className="text-3xl text-[#f7c42a] outline-none"
         />
     ),
     FramerMotion: (
         <TbBrandFramerMotion
             data-tooltip-id="tooltip-projects"
             data-tooltip-content="FramerMotion"
-            className="text-3xl text-[#6204f7]"
+            className="text-3xl text-[#6204f7] outline-none"
         />
     ),
 };
@@ -125,6 +125,7 @@ const dataProjects = [
             "TypeScript",
             "React",
             "Firebase",
+            "FramerMotion",
         ],
         repository: "https://github.com/LakioLive/InteractiveMapTrip",
         link: "https://interactive-map-trip.vercel.app/",
